@@ -1,8 +1,7 @@
-import com.recipeapp.datahandler.CSVDataHandler;
-import com.recipeapp.datahandler.DataHandler;
-import com.recipeapp.datahandler.JSONDataHandler;
-import com.recipeapp.ui.RecipeUI;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+//import com.recipeapp.datahandler.CSVDataHandler;
 
 public class App {
 
@@ -15,7 +14,15 @@ public class App {
             System.out.print("Select (1/2): ");
             String choice = reader.readLine();
             
-
+            switch(choice){
+                case "1"://1を選択した場合
+                    //CSVDataHandler csvDataHandler = new CSVDataHandler();//CSVDataHandlerインスタンスを生成する
+                    break;
+                case "2"://2を選択した場合
+                    //JSONDataHandler jsonDataHandler = new JSONDataHandler();//JSONDataHandlerインスタンスを生成する
+                default://それ以外の不正な入力の場合
+                    //CSVDataHandler csvDataHandler = new CSVDataHandler();
+            }
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
