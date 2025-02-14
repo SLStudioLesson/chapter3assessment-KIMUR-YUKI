@@ -1,12 +1,13 @@
 package com.recipeapp.model;
 public class Ingredient{
-    private String name;//材料の名前
+    //設問１ステップ１
+    private String name;//材料の名前(nameフィールド)
 
-    public Ingredient(String name){
-        this.name = name;
+    public Ingredient(String name){//コンストラクタ
+        this.name = name;//nameフィールドに同名の引数代入
     }
 
-    public String getName(){
-        return name;
+    public String getName(){//ゲッター
+        return name;//nameフィールドを返す
     }
 }

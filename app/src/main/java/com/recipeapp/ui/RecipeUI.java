@@ -10,6 +10,7 @@ public class RecipeUI {
     private BufferedReader reader;
     private DataHandler dataHandler;
 
+    
     public RecipeUI(DataHandler dataHandler) {
         reader = new BufferedReader(new InputStreamReader(System.in));
         this.dataHandler = dataHandler;

@@ -1,18 +1,23 @@
-/*package com.recipeapp.datahandler;
-public class //JSONDataHandler implements DataHandler{
+package com.recipeapp.datahandler;
+
+import java.util.ArrayList;
+
+import com.recipeapp.model.Recipe;
+
+public class JSONDataHandler implements DataHandler{
     public String getMode(){
         return "JSON";
     }
 
-    public String readData(){
-        return null;
+    public ArrayList<Recipe> readData(){
+        return null;//nullをリターン
     }
 
-    public String writeData(){
-        return "";
+    public void writeData(Recipe recipe){
+        return ;
     }
 
-    public String searchData(){
-        return null;
+    public ArrayList<Recipe> searchData(String keyword){
+        return null;//nullをリターン
     }
-}*/
+}

@@ -1,6 +1,12 @@
-/*package com.recipeapp.datahandler;
+package com.recipeapp.datahandler;
+
+import java.util.ArrayList;
+
+import com.recipeapp.model.Recipe;
+
 public class CSVDataHandler implements DataHandler {
-    private String filiPath;//レシピデータを格納するためCSVファイルパス
+    //設問３
+    private String filiPath;//レシピデータを格納するためのCSVファイルパス
 
     public CSVDataHandler(){//コンストラクタ
         this.filiPath = "app/src/main/resources/recipes.csv";//フィールドfilepathに
@@ -15,13 +21,13 @@ public class CSVDataHandler implements DataHandler {
         return "csv";//文字列csvを返す
     }
 
-    public String readData(){
-        return null;
+    public ArrayList<Recipe> readData(){
+        return null;//nullをリターン
     }
-    public String writeData(){
-        return "";
+    public void writeData(Recipe recipe){
+        return ;
     }
-    public String searchData(){
-        return null;
+    public ArrayList<Recipe>  searchData(String keyword){
+        return null;//nullをリターン
     }
-}*/
+}
