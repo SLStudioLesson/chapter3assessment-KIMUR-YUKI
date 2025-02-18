@@ -14,7 +14,7 @@ public class JSONDataHandler implements DataHandler{
     }
 
     public void writeData(Recipe recipe){
-        return ;
+        
     }
 
     public ArrayList<Recipe> searchData(String keyword){

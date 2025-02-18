@@ -7,7 +7,7 @@ public class Recipe{
     private String name;//レシピの名前(nameフィールド)
     private ArrayList<Ingredient> ingredients;//レシピの材料リスト(ingredientsフィールド)
 
-    public Recipe(String name, ArrayList ingredients){//コンストラクタ
+    public Recipe(String name, ArrayList<Ingredient> ingredients){//コンストラクタ
         this.name = name;//nameフィールドに同名の引数代入
         this.ingredients = ingredients;//ingredientsフィールドに同名の引数代入
     }
