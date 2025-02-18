@@ -104,12 +104,14 @@ public class RecipeUI {
                 }
                 Ingredient ingredient = new Ingredient(ingredientInput);//6-4. Ingredientオブジェクト（以下、ingredient）を生成する
                                                                         //6-4-1. 材料名にはingredientInputを指定する
+                
                 ingredients.add(ingredient);//6-5. ingredientをingredientsに追加する
-                Recipe recipe = new Recipe(recipeName, ingredients);//7. Recipeオブジェクト(以下、recipe)を生成する
-                                                                    //7-1. レシピ名は recipeName を指定する
-                                                                    //7-2. 材料リストは ingredientsを指定する
-                dataHandler.writeData(recipe);//8. writeDataに recipeを渡す
+                
             }
+            Recipe recipe = new Recipe(recipeName, ingredients);//7. Recipeオブジェクト(以下、recipe)を生成する
+                                                                //7-1. レシピ名は recipeName を指定する
+                                                                //7-2. 材料リストは ingredientsを指定する
+            dataHandler.writeData(recipe);//8. writeDataに recipeを渡す
             System.out.println("Recipe added successfully.");//9. `Recipe added successfully.`を画面に出力する（改行アリ）
         }catch (IOException e){//10. 上記処理のいずれかの中でIOExceptionが発生した場合は次の処理を行う
             System.out.print("Failed to add new recipe: 例外のメッセージ");//10-1. `Failed to add new recipe: `を画面に出力する（改行ナシ）

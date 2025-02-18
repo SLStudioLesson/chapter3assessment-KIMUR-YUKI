@@ -24,7 +24,7 @@ public class CSVDataHandler implements DataHandler {
     }
 
     public String getMode(){
-        return "csv";//文字列csvを返す
+        return "CSV";//文字列CSVを返す
     }
 
     public ArrayList<Recipe> readData(){
@@ -77,7 +77,9 @@ public class CSVDataHandler implements DataHandler {
         
         writer.write(recipeName);//2.レシピの名前を書き込む
         for(int i = 0; i < ingredients.size(); i++){//4.ingredientsのデータ件数分繰り返し、次の処理を行う
+            
             writer.write(",");//4-1.カンマを書き込む
+            
             Ingredient ingredient = ingredients.get(i);//4-2. 要素(以下、Ingredientオブジェクト)を1件取得する
             String ingredientName = ingredient.getName();//4-3. Ingredientオブジェクトより材料名を取得する
             writer.write(ingredientName);//4-4. 材料名を書き込む
